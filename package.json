@@ -1,0 +1,24 @@
+{
+  "name": "nitterredirect",
+  "version": "1.0.0",
+  "description": "A browser extention that automatically adds a nitter redirect button to twitter profiles. ",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xJacoby/NitterRedirect.git"
+  },
+  "author": "0xJacoby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xJacoby/NitterRedirect/issues"
+  },
+  "homepage": "https://github.com/0xJacoby/NitterRedirect#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  }
+}
