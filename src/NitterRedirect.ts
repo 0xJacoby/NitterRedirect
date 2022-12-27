@@ -2,13 +2,17 @@ const RedirectButton = {
 
     Create: function(): HTMLElement {
         let elem = document.createElement("div");
+        let btnElem = document.createElement("div");
+        let btnText = document.createElement("p");
         
-        // Styling
-        let innerContent = `
-           <div class="nitter_redirect_button"><p class="r-37j5jr">Open in Nitter</p></div>
-        `;
         elem.classList.add("nitter_redirect_button_container");
-        elem.innerHTML = innerContent;
+        btnElem.classList.add("nitter_redirect_button");
+        btnText.classList.add("r-37j5jr");
+
+        btnText.innerText = "Open in Nitter";
+
+        btnElem.appendChild(btnText);
+        elem.appendChild(btnElem);
 
         elem.querySelector(".nitter_redirect_button")?.addEventListener("click", () => {
             let userTag = window.location.pathname.split("/")[1];
